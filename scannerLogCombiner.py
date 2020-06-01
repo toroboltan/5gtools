@@ -43,8 +43,8 @@ current_dt = datetime.datetime.now()
 print ("**** Begin ****" + str(current_dt))
 
 #Change path
-os.chdir(filePath)
-
+#os.chdir(filePath)
+'''
 #Get the files on directory
 baseFiles = os.listdir()
 for item in baseFiles:
@@ -82,5 +82,6 @@ combined_df = pd.concat(testFileList_df, ignore_index = True)
 os.chdir(combinedPath)
 combined_df.to_csv(combinedFile, index = False)
 current_dt = datetime.datetime.now()
-
+'''
 print ("**** End ****" + str(current_dt))
+
